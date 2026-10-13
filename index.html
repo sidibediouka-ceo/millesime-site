@@ -22,7 +22,7 @@
     --champagne: #7A5F33; --lueur: #D9902E; --carte: rgba(255,253,248,.7); --cadre: #2A2530; color-scheme: light; }
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; } /* les ancres s'arrêtent sous l'en-tête collant */
 body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 a { color: inherit; }
 a:focus-visible { outline: 2px solid var(--champagne); outline-offset: 3px; border-radius: 4px; }
@@ -114,7 +114,7 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; padding:
 }
 </style>
 </head>
-<body>
+<body id="haut">
 <header>
   <div class="largeur">
     <a class="marque" href="#haut">Millésime</a>
@@ -129,7 +129,7 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; padding:
   </div>
 </header>
 
-<main id="haut">
+<main>
   <div class="heros">
     <div class="lumieres" aria-hidden="true"><i style="left:33.1%;animation-delay:-2.1s;animation-duration:16.2s;width:5px;height:5px"></i><i style="left:53.4%;animation-delay:-5.1s;animation-duration:11.5s;width:8px;height:8px"></i><i style="left:5.6%;animation-delay:-6.1s;animation-duration:11.6s;width:5px;height:5px"></i><i style="left:42.8%;animation-delay:-11.6s;animation-duration:12.0s;width:6px;height:6px"></i><i style="left:62.2%;animation-delay:-13.3s;animation-duration:15.6s;width:8px;height:8px"></i><i style="left:95.7%;animation-delay:-0.7s;animation-duration:17.9s;width:7px;height:7px"></i><i style="left:15.8%;animation-delay:-1.6s;animation-duration:13.5s;width:11px;height:11px"></i><i style="left:19.3%;animation-delay:-8.1s;animation-duration:16.1s;width:8px;height:8px"></i><i style="left:54.6%;animation-delay:-0.9s;animation-duration:11.5s;width:6px;height:6px"></i><i style="left:67.3%;animation-delay:-6.0s;animation-duration:13.5s;width:9px;height:9px"></i><i style="left:45.5%;animation-delay:-4.2s;animation-duration:17.4s;width:10px;height:10px"></i><i style="left:25.4%;animation-delay:-8.0s;animation-duration:15.2s;width:11px;height:11px"></i><i style="left:72.0%;animation-delay:-4.0s;animation-duration:18.8s;width:6px;height:6px"></i><i style="left:42.1%;animation-delay:-10.6s;animation-duration:12.2s;width:8px;height:8px"></i><i style="left:5.8%;animation-delay:-9.4s;animation-duration:17.1s;width:9px;height:9px"></i><i style="left:86.0%;animation-delay:-4.4s;animation-duration:16.6s;width:9px;height:9px"></i><i style="left:57.7%;animation-delay:-6.4s;animation-duration:17.7s;width:12px;height:12px"></i><i style="left:47.5%;animation-delay:-9.3s;animation-duration:11.5s;width:10px;height:10px"></i><i style="left:64.1%;animation-delay:-13.9s;animation-duration:17.6s;width:7px;height:7px"></i><i style="left:39.0%;animation-delay:-9.4s;animation-duration:11.2s;width:8px;height:8px"></i><i style="left:18.1%;animation-delay:-1.6s;animation-duration:11.5s;width:10px;height:10px"></i><i style="left:14.4%;animation-delay:-3.5s;animation-duration:14.1s;width:11px;height:11px"></i></div>
     <div class="largeur">
