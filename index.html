@@ -40,6 +40,7 @@ header .largeur { display: flex; align-items: center; justify-content: space-bet
 nav ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
 nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; text-decoration: none; font-size: 15px; color: var(--doux); }
 nav a:hover { color: var(--texte); }
+nav li.mobile { display: none; }
 
 /* Héros */
 .heros { position: relative; padding: 72px 0 96px; overflow: hidden; }
@@ -142,6 +143,22 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; padding:
   .onde { height: 140px; }
   .attente { margin-left: auto; margin-right: auto; }
   section { padding: 72px 0; }
+  /* Mobile : un en-tête qui mène à l'App Store, des écrans plus petits, le rituel qui défile du doigt. */
+  nav li.mobile { display: list-item; }
+  .petit-bouton { min-height: 36px; padding: 0 16px; font-size: 14px; margin: 0; color: var(--fond); }
+  nav a.petit-bouton { color: var(--fond); }
+  .telephone { width: min(260px, 64vw); border-radius: 40px; padding: 8px; }
+  .telephone img { border-radius: 33px; }
+  .petit .telephone { width: min(200px, 52vw); border-radius: 32px; padding: 7px; }
+  .petit .telephone img { border-radius: 26px; }
+  .duo .telephone { width: min(170px, 42vw); }
+  .temps { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -16px; padding: 0 16px 8px; scrollbar-width: none; }
+  .temps::-webkit-scrollbar { display: none; }
+  .temps article { flex: 0 0 74%; scroll-snap-align: center; }
+  .intro { margin-bottom: 32px; }
+  section { padding: 56px 0; }
+  .rangee + .rangee { margin-top: 64px; }
+  .heros { padding: 32px 0 56px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -159,7 +176,8 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; padding:
         <li class="facultatif"><a href="#rituel">Le rituel</a></li>
         <li class="facultatif"><a href="#ceremonie">La cérémonie</a></li>
         <li class="facultatif"><a href="#annees">Tes années</a></li>
-        <li><a href="#prive">Confidentialité</a></li>
+        <li class="facultatif"><a href="#prive">Confidentialité</a></li>
+        <li class="mobile"><a class="telecharger petit-bouton" href="https://apps.apple.com/fr/app/id6821693639">Télécharger</a></li>
       </ul>
     </nav>
   </div>
